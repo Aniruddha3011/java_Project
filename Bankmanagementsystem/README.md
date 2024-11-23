@@ -7,17 +7,17 @@ The Bank Management System is a Java-based application with a user-friendly grap
 
 1. Login Page
 
-Purpose: Allows users to securely log in to their accounts using their card number and PIN.
-
-Features:
-
-Input fields for Card Number and PIN.
-
-Buttons: Sign In, Clear (to reset inputs), and Sign Up (to create a new account).
-
-Validates login credentials using data stored in a MySQL database.
-
-Redirects authenticated users to the Transaction Page.
+      Purpose: Allows users to securely log in to their accounts using their card number and PIN.
+      
+      Features:
+      
+      Input fields for Card Number and PIN.
+      
+      Buttons: Sign In, Clear (to reset inputs), and Sign Up (to create a new account).
+      
+      Validates login credentials using data stored in a MySQL database.
+      
+      Redirects authenticated users to the Transaction Page.
 
 
 
@@ -26,23 +26,23 @@ Redirects authenticated users to the Transaction Page.
 
 2. Transaction Page
 
-Purpose: Enables users to perform various banking transactions after successful login.
-
-Features:
-
-Deposit: Navigates to the deposit page to add funds to the account.
-
-Withdraw: Allows users to withdraw funds.
-
-Fast Cash: Provides predefined withdrawal options for quick transactions.
-
-Balance Inquiry: Displays the current account balance.
-
-Mini-Statement: Shows the recent transaction history.
-
-PIN Change: Enables users to update their account PIN.
-
-Exit: Closes the application.
+      Purpose: Enables users to perform various banking transactions after successful login.
+      
+      Features:
+      
+      Deposit: Navigates to the deposit page to add funds to the account.
+      
+      Withdraw: Allows users to withdraw funds.
+      
+      Fast Cash: Provides predefined withdrawal options for quick transactions.
+      
+      Balance Inquiry: Displays the current account balance.
+      
+      Mini-Statement: Shows the recent transaction history.
+      
+      PIN Change: Enables users to update their account PIN.
+      
+      Exit: Closes the application.
 
 
 
@@ -51,48 +51,52 @@ Exit: Closes the application.
 
 3. Sign-Up Process
 
-The application provides a multi-page sign-up process to gather detailed information about new users:
+      The application provides a multi-page sign-up process to gather detailed information about new users:
+      
+      Page 1: Personal Details
+      
+      Purpose: Collects basic personal information.
+      
+      Fields:
+      
+      Name, Father's Name, Date of Birth (with a date picker), Gender, Email Address.
+      
+      Marital Status, Address, City, State, and Pincode.
 
-Page 1: Personal Details
 
-Purpose: Collects basic personal information.
+      Validation: Ensures required fields are not left blank before proceeding to the next step.
 
-Fields:
-
-Name, Father's Name, Date of Birth (with a date picker), Gender, Email Address.
-
-Marital Status, Address, City, State, and Pincode.
-
-
-Validation: Ensures required fields are not left blank before proceeding to the next step.
+   
 
 
 Page 2: Additional Details
 
-Purpose: Captures more detailed information about the user.
+  Purpose: Captures more detailed information about the user.
+  
+  Fields:
+  
+  Religion, Category (e.g., General, OBC), Income, Educational Qualification.
+  
+  Occupation, PAN Number, and Aadhaar Number.
+  
+  
+  Validation: Checks for essential information before moving forward.
 
-Fields:
-
-Religion, Category (e.g., General, OBC), Income, Educational Qualification.
-
-Occupation, PAN Number, and Aadhaar Number.
-
-
-Validation: Checks for essential information before moving forward.
+  
 
 
 Page 3: Account Setup
 
-Purpose: Finalizes account creation by assigning an account number and allowing users to set a PIN.
-
-Fields:
-
-Account Type (e.g., Savings, Current), Facility Preferences (e.g., ATM Card, Internet Banking).
-
-PIN setup for secure transactions.
-
-
-Database Integration: Stores user information into the database.
+  Purpose: Finalizes account creation by assigning an account number and allowing users to set a PIN.
+  
+  Fields:
+  
+  Account Type (e.g., Savings, Current), Facility Preferences (e.g., ATM Card, Internet Banking).
+  
+  PIN setup for secure transactions.
+  
+  
+  Database Integration: Stores user information into the database.
 
 
 
@@ -100,13 +104,13 @@ Database Integration: Stores user information into the database.
 
 4. Database Integration
 
-The system connects to a MySQL database for data storage and retrieval. Key database tables include:
-
-Login: Stores card numbers, PINs, and authentication details.
-
-Signup: Holds user registration information across all three pages.
-
-Transactions: Records transaction history for balance tracking and mini-statements.
+      The system connects to a MySQL database for data storage and retrieval. Key database tables include:
+      
+      Login: Stores card numbers, PINs, and authentication details.
+      
+      Signup: Holds user registration information across all three pages.
+      
+      Transactions: Records transaction history for balance tracking and mini-statements.
 
 
 
